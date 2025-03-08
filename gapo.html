@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literature Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+        <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li><a href="works.html">Notable Works</a>
+                <ul>
+                    <li><a href="gapo.html" class="active">Gapo Quiz</a></li>
+                    <li><a href="dekada.html">Dekada 70 Quiz</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Go Back Button -->
+        <button class="go-backa" onclick="history.back()">Go Back</button>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h1>Gapo Quiz</h1>
+        <hr>
+        <div class="quiz-container">
+            <form id="quiz" onsubmit="return checkAnswers()">
+
+<label>1. Where is the setting of Gapô?</label><br>
+<input type="radio" name="q1" value="a"> a) Manila<br>
+<input type="radio" name="q1" value="b"> b) Cebu<br>
+<input type="radio" name="q1" value="c"> c) Olongapo<br><br>
+
+<label>2. Who is Michael in the novel?</label><br>
+<input type="radio" name="q2" value="a"> a) A Filipino politician<br>
+<input type="radio" name="q2" value="b"> b) A mixed-race child<br>
+<input type="radio" name="q2" value="c"> c) A Chinese soldier<br><br>
+
+<label>3. What major influence is present in Olongapo City during the novel?</label><br>
+<input type="radio" name="q3" value="a"> a) U.S. military bases<br>
+<input type="radio" name="q3" value="b"> b) Chinese trade<br>
+<input type="radio" name="q3" value="c"> c) Japanese occupation<br><br>
+
+<label>4. What is Michael’s internal struggle in Gapô?</label><br>
+<input type="radio" name="q4" value="a"> a) Economic hardship<br>
+<input type="radio" name="q4" value="b"> b) Racial discrimination and identity<br>
+<input type="radio" name="q4" value="c"> c) Family conflicts<br><br>
+
+<label>5. How does Michael feel about his identity?</label><br>
+<input type="radio" name="q5" value="a"> a) He embraces both cultures<br>
+<input type="radio" name="q5" value="b"> b) He is confused and torn between two identities<br>
+<input type="radio" name="q5" value="c"> c) He rejects both American and Filipino cultures<br><br>
+
+<label>6. What aspect of Filipino society is criticized in Gapô?</label><br>
+<input type="radio" name="q6" value="a"> a) The agricultural system<br>
+<input type="radio" name="q6" value="b"> b) Economic prosperity<br>
+<input type="radio" name="q6" value="c"> c) The influence of American culture and military<br><br>
+
+<label>7. Who is the primary antagonist in Gapô?</label><br>
+<input type="radio" name="q7" value="a"> a) Michael’s father<br>
+<input type="radio" name="q7" value="b"> b) Michael’s mother<br>
+<input type="radio" name="q7" value="c"> c) The U.S. military personnel<br><br>
+
+<label>8. What role does race play in the novel?</label><br>
+<input type="radio" name="q8" value="a"> a) It causes conflict and discrimination<br>
+<input type="radio" name="q8" value="b"> b) It has no significant role<br>
+<input type="radio" name="q8" value="c"> c) It highlights social equality<br><br>
+
+<label>9. What does the novel suggest about colonialism?</label><br>
+<input type="radio" name="q9" value="a"> a) It led to Filipino independence<br>
+<input type="radio" name="q9" value="b"> b) It has deeply affected Filipino identity and society<br>
+<input type="radio" name="q9" value="c"> c) It had no lasting effects<br><br>
+
+<label>10. How does Michael’s life change due to the U.S. military presence in Olongapo?</label><br>
+<input type="radio" name="q10" value="a"> a) He faces exploitation and social discrimination<br>
+<input type="radio" name="q10" value="b"> b) He thrives economically<br>
+<input type="radio" name="q10" value="c"> c) He becomes part of the American military<br><br>
+
+<div id="result"></div>
+ <div class="button-container">
+     <button type="submit" class="quiz-button">Submit Quiz</button>
+     <button class="go-back" onclick="history.back()">Go Back</button>
+ </div>
+</form>
+</div>
+</div>
+</body>
+</html>
+<script src="ans1.js"></script>

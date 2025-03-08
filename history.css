@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #500b1d, #F5F5DC, #500b1d);
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 200px;
+    flex-grow: 1;
+    height: 100vh;
+    overflow: auto;
+    padding-left: 30px;
+    position: relative;
+}
+
+.go-back {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #500b1d;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.go-back:hover {
+    background-color: #882d45;
+}
+
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.heading-container {
+    display: block;
+    position: relative;
+    font-size: 36px; /* Adjust as needed */
+    color: white;
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+    background: url('https://i.imgur.com/JU5hlYo.jpeg') no-repeat center center;
+    background-size: cover;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 57.9%);
+    margin-top: -20px;
+    opacity: 0.8;
+}
+
+.heading-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+img {
+    border: 3px solid rgb(110, 67, 38);
+    box-shadow: 2px 2px 5px black;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+}
+
+.description h2 {
+    margin-bottom: 15px;
+}
+
+.description p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.description ul {
+    margin-bottom: 20px;
+}
+
+.description ul li {
+    margin-bottom: 10px;
+}
+
+.quiz-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #500b1d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-button:hover {
+    background-color: #882d45;
+}

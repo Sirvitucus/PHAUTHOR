@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #500b1d, #F5F5DC, #500b1d);
+}
+
+.sidebar {
+    width: 250px; /* Sidebar width */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed on the left */
+    top: 0;
+    left: 0;
+    bottom: 0; /* Full height */
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul ul {
+    margin-left: 20px; /* Indent sub-items */
+    font-size: 0.9em;  /* Make sub-items slightly smaller */
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+}
+
+.sidebar ul li a:hover {
+    color: #882d45; /* Change color on hover */
+}
+
+/* Style for the active (current) page */
+.sidebar ul li a.active {
+    color: #fff;
+    background-color:#500b1d;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+/* Go Back Button Style */
+.go-back {
+    display: block;
+    width: 50%; /* Full width */
+    padding: 10px 15px;
+    margin-top: 560px;
+    background-color: #500b1d;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.go-back:hover {
+    background-color: #882d45; /* Hover effect */
+}
+
+.heading-container {
+    display: block;
+    position: relative;
+    font-size: 36px; /* Adjust as needed */
+    color: white;
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+    background: url('https://i.imgur.com/z331pPe.jpeg') no-repeat center center;
+    background-size: cover;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 60.9%);
+    margin-top: -20px;
+    opacity: 0.8;
+}
+
+.heading-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.main-content {
+    margin-left: 255px;
+    padding: 20px;
+    background-color: #fff;
+    flex-grow: 1;
+    height: 100vh;
+    overflow: auto;
+}
+
+.main-content h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.main-content hr {
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+}
+
+    .main-content h1 {
+        margin-bottom: 20px;
+    }
+
+    .main-content hr {
+        margin-bottom: 20px;
+    }
+
+    .description h2 {
+        margin-bottom: 15px;
+    }
+
+    .description p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    .description ul {
+        margin-bottom: 20px;
+    }
+
+    .description ul li {
+        margin-bottom: 10px;
+    }
+
+    .description ul ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+.quiz-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #500b1d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    }
+    
+    .quiz-button:hover {
+        background-color: #882d45;
+    }
+    
